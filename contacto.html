@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <title>Contacto | Norvel — Ajustadores de Seguros 24 hrs</title>
+  <meta name="description" content="Contacte a Norvel para ajuste de seguros en México. Atención 24 horas, 365 días. Oficinas en Querétaro, CDMX, Veracruz y Mérida.">
+  <meta property="og:title" content="Contacto | Norvel">
+  <meta property="og:description" content="Contáctenos para ajuste de seguros — disponibles 24 horas al día.">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Norvel Peritos Ajustadores",
+    "telephone":["+524420000000","+524420000001","+524420000002"],
+    "email":"contacto@norvel.example",
+    "url":"https://norvel.example",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Blvd. Demostración 100, Col. Centro",
+      "addressLocality":"Querétaro",
+      "addressRegion":"Querétaro",
+      "addressCountry":"MX"
+    },
+    "sameAs":[]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader" class="page-loader" aria-hidden="true" role="presentation">
+    <div class="page-loader__content">
+      <p class="page-loader__brand">Norvel</p>
+      <span class="page-loader__sep">|</span>
+      <p class="page-loader__page" data-i18n="loader.contacto">Contacto</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar--transparent" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__inner">
+      <a href="/index.html" class="navbar__logo" aria-label="Norvel — Inicio">
+        <img src="/assets/images/logo.svg" alt="Norvel logo" class="navbar__logo-img">
+        <span class="navbar__logo-text">Norvel</span>
+      </a>
+      <ul class="navbar__nav" role="list">
+        <li><a href="/index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="/servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="/experiencia.html" data-i18n="nav.experiencia">Experiencia</a></li>
+        <li><a href="/equipo.html" data-i18n="nav.equipo">Equipo</a></li>
+        <li><a href="/contacto.html" class="active" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <a href="/contacto.html" class="navbar__cta" data-i18n="nav.cta">Contáctanos 24 hrs</a>
+      <div class="lang-switcher lang-switcher--desktop">
+        <button class="lang-switcher__btn" data-lang="es" onclick="setLang('es')">ES</button>
+        <button class="lang-switcher__btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-switcher__btn" data-lang="pt" onclick="setLang('pt')">PT</button>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menú móvil">
+      <div class="navbar__mobile-header">
+        <a href="/index.html" class="navbar__logo" aria-label="Norvel — Inicio">
+          <img src="/assets/images/logo.svg" alt="Norvel logo" class="navbar__logo-img">
+          <span class="navbar__logo-text">Norvel</span>
+        </a>
+        <button class="navbar__mobile-close" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="navbar__mobile-links">
+        <a href="/index.html" data-i18n="nav.inicio">Inicio</a>
+        <a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+        <a href="/servicios.html" data-i18n="nav.servicios">Servicios</a>
+        <a href="/experiencia.html" data-i18n="nav.experiencia">Experiencia</a>
+        <a href="/equipo.html" data-i18n="nav.equipo">Equipo</a>
+        <a href="/contacto.html" data-i18n="nav.contacto">Contacto</a>
+      </div>
+      <div class="lang-switcher lang-switcher--mobile">
+        <button class="lang-switcher__btn" data-lang="es" onclick="setLang('es')">ES</button>
+        <button class="lang-switcher__btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-switcher__btn" data-lang="pt" onclick="setLang('pt')">PT</button>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Contacto">
+    <div class="container">
+      <h1 data-i18n="contact.page_title">Contáctenos</h1>
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/index.html" data-i18n="nav.inicio">Inicio</a>
+        <span>›</span>
+        <span aria-current="page" data-i18n="contact.breadcrumb">Contacto</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CONTACTO PRINCIPAL -->
+  <section class="section" aria-label="Formulario de contacto">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Formulario Formspree -->
+        <div class="reveal">
+          <p class="section-label" data-i18n="contact.form_label">Envíenos un Mensaje</p>
+          <h2 class="section-title" style="margin-bottom:8px;" data-i18n="contact.form_title">Estamos Disponibles 24/7</h2>
+          <p style="color:var(--color-gray-text);margin-bottom:32px;" data-i18n="contact.form_sub">Complete el formulario y un perito especializado se comunicará con usted a la brevedad.</p>
+
+          <div class="form-alert" id="formSuccess" role="alert">
+            ✓ Mensaje enviado con éxito. Nos comunicaremos en breve.
+          </div>
+          <div class="form-alert error" id="formError" role="alert" style="display:none;">
+            ✗ Ocurrió un error. Por favor intente de nuevo o contáctenos por teléfono.
+          </div>
+
+          <!-- Apunta a Formspree — reemplazar YOUR_FORM_ID con el ID real -->
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nuevo contacto desde norvel.example">
+            <input type="hidden" name="_replyto" value="">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" data-i18n="contact.name">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Su nombre completo" data-i18n-placeholder="contact.name_ph" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="empresa" data-i18n="contact.company">Empresa / Aseguradora</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de su empresa" data-i18n-placeholder="contact.company_ph" autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-i18n="contact.email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" placeholder="correo@empresa.com" data-i18n-placeholder="contact.email_ph" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="telefono" data-i18n="contact.phone">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="(000) 000-0000" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio" data-i18n="contact.service">Tipo de servicio</label>
+              <select id="servicio" name="servicio">
+                <option value="" data-i18n="contact.service_default">— Seleccione un ramo —</option>
+                <option value="incendio" data-i18n="contact.service_incendio">Incendio</option>
+                <option value="rc" data-i18n="contact.service_rc">Responsabilidad Civil</option>
+                <option value="diversos" data-i18n="contact.service_diversos">Diversos</option>
+                <option value="gobierno" data-i18n="contact.service_gobierno">Cuentas de Gobierno</option>
+                <option value="transporte" data-i18n="contact.service_transporte">Transporte de Carga</option>
+                <option value="ramos-tecnicos" data-i18n="contact.service_tecnicos">Ramos Técnicos</option>
+                <option value="catastrofico" data-i18n="contact.service_catastrofico">Siniestro Catastrófico</option>
+                <option value="otro" data-i18n="contact.service_otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" data-i18n="contact.message">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Describa brevemente el siniestro o consulta..." data-i18n-placeholder="contact.message_ph" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              <span data-i18n="contact.submit">Enviar mensaje</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info de contacto -->
+        <div class="reveal reveal-delay-1">
+          <p class="section-label" data-i18n="contact.info_label">Información de Contacto</p>
+          <h2 class="section-title" style="margin-bottom:32px;" data-i18n="contact.info_title">Canales Directos</h2>
+
+          <!-- Teléfonos 24 hrs -->
+          <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:40px;">
+            <a href="tel:+524420000000" style="display:flex;align-items:center;gap:16px;padding:20px;border:1px solid var(--color-border);border-radius:12px;transition:var(--transition);" onmouseover="this.style.borderColor='var(--color-gold)'" onmouseout="this.style.borderColor='var(--color-border)'">
+              <div style="width:48px;height:48px;border-radius:50%;background:rgba(12,59,52,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-navy);" aria-hidden="true">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:.75rem;font-weight:600;color:var(--color-gold);text-transform:uppercase;letter-spacing:.08em;" data-i18n="contact.line24">Línea 24 hrs</div>
+                <div style="font-size:1.1rem;font-weight:600;color:var(--color-navy);">(442) 000-0000</div>
+              </div>
+            </a>
+
+            <a href="tel:+524420000001" style="display:flex;align-items:center;gap:16px;padding:20px;border:1px solid var(--color-border);border-radius:12px;transition:var(--transition);" onmouseover="this.style.borderColor='var(--color-gold)'" onmouseout="this.style.borderColor='var(--color-border)'">
+              <div style="width:48px;height:48px;border-radius:50%;background:rgba(12,59,52,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-navy);" aria-hidden="true">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:.75rem;font-weight:600;color:var(--color-gold);text-transform:uppercase;letter-spacing:.08em;" data-i18n="contact.line24">Línea 24 hrs</div>
+                <div style="font-size:1.1rem;font-weight:600;color:var(--color-navy);">(442) 000-0001</div>
+              </div>
+            </a>
+
+            <a href="tel:+524420000002" style="display:flex;align-items:center;gap:16px;padding:20px;border:1px solid var(--color-border);border-radius:12px;transition:var(--transition);" onmouseover="this.style.borderColor='var(--color-gold)'" onmouseout="this.style.borderColor='var(--color-border)'">
+              <div style="width:48px;height:48px;border-radius:50%;background:rgba(12,59,52,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-navy);" aria-hidden="true">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:.75rem;font-weight:600;color:var(--color-gold);text-transform:uppercase;letter-spacing:.08em;" data-i18n="contact.line24">Línea 24 hrs</div>
+                <div style="font-size:1.1rem;font-weight:600;color:var(--color-navy);">(442) 000-0002</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Email y LinkedIn -->
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+            <a href="mailto:contacto@norvel.example" style="display:flex;align-items:center;gap:12px;color:var(--color-navy);font-weight:500;font-size:.95rem;">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              contacto@norvel.example
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;color:var(--color-navy);font-weight:500;font-size:.95rem;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- WhatsApp directo -->
+          <a href="https://wa.me/524420000000?text=Hola+Norvel%2C+me+interesa+conocer+sus+servicios+de+ajuste."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn"
+             style="background:#25D366;color:white;width:100%;justify-content:center;font-size:1rem;"
+             aria-label="Abrir chat de WhatsApp con Norvel">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="contact.wa_btn">Escribir por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section style="padding:0 0 80px;" aria-label="Mapa sede Querétaro">
+    <div class="container">
+      <img class="map-embed" src="/assets/images/coverage-map.svg" alt="Mapa ilustrativo de cobertura nacional" loading="lazy">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="/assets/images/logo.svg" alt="Norvel" class="footer__logo-img">
+            <span class="footer__logo-text">Norvel</span>
+          </div>
+          <p data-i18n-html="footer.desc">Norvel Peritos Ajustadores<br>Ajuste de seguros con más de 15 años de experiencia en México.</p>
+          <div class="footer__social">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://wa.me/524420000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.servicios">Servicios</h5>
+          <a href="/servicios.html#incendio" data-i18n="footer.incendio">Incendio</a>
+          <a href="/servicios.html#rc" data-i18n="footer.rc">Responsabilidad Civil</a>
+          <a href="/servicios.html#transporte" data-i18n="footer.transporte">Transporte de Carga</a>
+          <a href="/servicios.html#ramos-tecnicos" data-i18n="footer.ramos">Ramos Técnicos</a>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.empresa">Empresa</h5>
+          <a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+          <a href="/equipo.html" data-i18n="nav.equipo">Equipo</a>
+          <a href="/experiencia.html" data-i18n="nav.experiencia">Experiencia</a>
+          <a href="/contacto.html" data-i18n="nav.contacto">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.contacto_title">Contacto</h5>
+          <p data-i18n="footer.ubicacion">📍 Querétaro, QRO</p>
+          <a href="tel:+524420000000">📞 (442) 000-0000</a>
+          <a href="tel:+524420000001">📞 (442) 000-0001</a>
+          <a href="mailto:contacto@norvel.example">✉ contacto@norvel.example</a>
+          <p style="margin-top:8px;font-size:.78rem;color:rgba(255,255,255,.35);" data-i18n="footer.atencion">Atención 24 hrs · 365 días</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copy">© 2026 Norvel Peritos Ajustadores. Sitio demostrativo con marca e información ficticias.</p>
+        <p><span data-i18n="footer.dev">Desarrollado por</span> <a href="https://northclick.net" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold);">NorthClick</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-widget" id="whatsappWidget">
+    <a href="https://wa.me/524420000000?text=Hola+Norvel%2C+me+interesa+conocer+sus+servicios+de+ajuste." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <button class="whatsapp-toggle" id="whatsappToggle" aria-label="Minimizar WhatsApp">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+  </div>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

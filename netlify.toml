@@ -1,0 +1,62 @@
+# ============================================================
+# Norvel — netlify.toml
+# Configuración de build y redirects para Netlify
+# ============================================================
+
+[build]
+  publish = "."
+
+# Habilitar Netlify Identity (requerido por Decap CMS git-gateway)
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+# Redirects: evitar 404 en URLs sin extensión
+[[redirects]]
+  from = "/nosotros"
+  to   = "/nosotros.html"
+  status = 200
+
+[[redirects]]
+  from = "/servicios"
+  to   = "/servicios.html"
+  status = 200
+
+[[redirects]]
+  from = "/experiencia"
+  to   = "/experiencia.html"
+  status = 200
+
+[[redirects]]
+  from = "/equipo"
+  to   = "/equipo.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacto"
+  to   = "/contacto.html"
+  status = 200
+
+# Headers de seguridad
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options       = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy       = "strict-origin-when-cross-origin"
+    Permissions-Policy    = "camera=(), microphone=(), geolocation=()"
+
+# Cache largo para assets estáticos
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

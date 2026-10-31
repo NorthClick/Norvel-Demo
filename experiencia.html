@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <title>Experiencia | Norvel — Galería de Siniestros y Catástrofes</title>
+  <meta name="description" content="Galería de siniestros atendidos por Norvel: incendios, colisiones, volcaduras, descarrilamientos, catástrofes naturales y maquinaria. 15+ años de experiencia.">
+  <meta property="og:title" content="Experiencia | Norvel">
+  <meta property="og:description" content="Galería de siniestros y catástrofes atendidos por Norvel en más de 15 años.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader" class="page-loader" aria-hidden="true" role="presentation">
+    <div class="page-loader__content">
+      <p class="page-loader__brand">Norvel</p>
+      <span class="page-loader__sep">|</span>
+      <p class="page-loader__page" data-i18n="loader.experiencia">Experiencia</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar--transparent" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__inner">
+      <a href="/index.html" class="navbar__logo" aria-label="Norvel — Inicio">
+        <img src="/assets/images/logo.svg" alt="Norvel logo" class="navbar__logo-img">
+        <span class="navbar__logo-text">Norvel</span>
+      </a>
+      <ul class="navbar__nav" role="list">
+        <li><a href="/index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="/servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="/experiencia.html" class="active" data-i18n="nav.experiencia">Experiencia</a></li>
+        <li><a href="/equipo.html" data-i18n="nav.equipo">Equipo</a></li>
+        <li><a href="/contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <a href="/contacto.html" class="navbar__cta" data-i18n="nav.cta">Contáctanos 24 hrs</a>
+      <div class="lang-switcher lang-switcher--desktop">
+        <button class="lang-switcher__btn" data-lang="es" onclick="setLang('es')">ES</button>
+        <button class="lang-switcher__btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-switcher__btn" data-lang="pt" onclick="setLang('pt')">PT</button>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menú móvil">
+      <div class="navbar__mobile-header">
+        <a href="/index.html" class="navbar__logo" aria-label="Norvel — Inicio">
+          <img src="/assets/images/logo.svg" alt="Norvel logo" class="navbar__logo-img">
+          <span class="navbar__logo-text">Norvel</span>
+        </a>
+        <button class="navbar__mobile-close" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="navbar__mobile-links">
+        <a href="/index.html" data-i18n="nav.inicio">Inicio</a>
+        <a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+        <a href="/servicios.html" data-i18n="nav.servicios">Servicios</a>
+        <a href="/experiencia.html" data-i18n="nav.experiencia">Experiencia</a>
+        <a href="/equipo.html" data-i18n="nav.equipo">Equipo</a>
+        <a href="/contacto.html" data-i18n="nav.contacto">Contacto</a>
+      </div>
+      <div class="lang-switcher lang-switcher--mobile">
+        <button class="lang-switcher__btn" data-lang="es" onclick="setLang('es')">ES</button>
+        <button class="lang-switcher__btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-switcher__btn" data-lang="pt" onclick="setLang('pt')">PT</button>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Experiencia">
+    <div class="container">
+      <h1 data-i18n="exp.page_title">Experiencia en Campo</h1>
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="/index.html" data-i18n="nav.inicio">Inicio</a>
+        <span>›</span>
+        <span aria-current="page" data-i18n="exp.breadcrumb">Experiencia</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CATÁSTROFES -->
+  <section class="section section--navy" aria-label="Grandes catástrofes atendidas">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label" data-i18n="exp.cat_label">Trayectoria Histórica</p>
+        <h2 class="section-title text-white" data-i18n="exp.cat_title">Presentes en los Grandes Siniestros de México</h2>
+        <p style="color:rgba(255,255,255,.7);max-width:620px;margin:0 auto 56px;" data-i18n="exp.cat_sub">Cada catástrofe nos ha forjado. La experiencia acumulada en estos eventos de alto impacto es la garantía más sólida que ofrecemos a nuestros clientes.</p>
+      </div>
+
+      <div class="catastrophe-timeline">
+        <div class="catastrophe-card reveal">
+          <div class="catastrophe-card__year">2009</div>
+          <div class="catastrophe-card__location">Bajío</div>
+          <h4 data-i18n="exp.cat_a_title">Incendio en Parque Industrial</h4>
+          <p data-i18n="exp.cat_a_desc">Primer gran evento de nuestra trayectoria. Valuación de naves, maquinaria e inventarios con pérdidas de gran cuantía.</p>
+        </div>
+        <div class="catastrophe-card reveal reveal-delay-1">
+          <div class="catastrophe-card__year">2013</div>
+          <div class="catastrophe-card__location">Costa del Golfo</div>
+          <h4 data-i18n="exp.cat_b_title">Inundaciones en la Costa del Golfo</h4>
+          <p data-i18n="exp.cat_b_desc">Lluvias extraordinarias afectaron viviendas, bodegas e infraestructura regional. Peritaje masivo en campo durante seis semanas.</p>
+        </div>
+        <div class="catastrophe-card reveal reveal-delay-2">
+          <div class="catastrophe-card__year">2015</div>
+          <div class="catastrophe-card__location">Península de Yucatán</div>
+          <h4 data-i18n="exp.cat_c_title">Temporada de Huracanes — Península</h4>
+          <p data-i18n="exp.cat_c_desc">Más de 30 peritos movilizados para dictaminar daños en hoteles, comercios y viviendas.</p>
+        </div>
+        <div class="catastrophe-card reveal">
+          <div class="catastrophe-card__year">2018</div>
+          <div class="catastrophe-card__location">Corredor Norte</div>
+          <h4 data-i18n="exp.cat_d_title">Siniestros de Carga — Corredor Norte</h4>
+          <p data-i18n="exp.cat_d_desc">Atención de volcaduras y colisiones de transporte pesado con mercancía de alto valor en rutas federales.</p>
+        </div>
+        <div class="catastrophe-card reveal reveal-delay-1">
+          <div class="catastrophe-card__year">2021</div>
+          <div class="catastrophe-card__location">Región Centro</div>
+          <h4 data-i18n="exp.cat_e_title">Explosión en Planta Química</h4>
+          <p data-i18n="exp.cat_e_desc">Valuación de daños materiales, maquinaria y pérdidas consecuenciales en un complejo industrial.</p>
+        </div>
+        <div class="catastrophe-card reveal reveal-delay-2">
+          <div class="catastrophe-card__year">2024</div>
+          <div class="catastrophe-card__location">Altiplano</div>
+          <h4 data-i18n="exp.cat_f_title">Granizada Severa — Altiplano</h4>
+          <p data-i18n="exp.cat_f_desc">Despliegue en menos de 12 horas. Evaluación masiva de daños en vehículos, techumbres, invernaderos y cultivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section" aria-label="Galería de siniestros">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label" data-i18n="exp.gallery_label">Casos Representativos</p>
+        <h2 class="section-title" data-i18n="exp.gallery_title">Galería de Siniestros</h2>
+        <p class="section-sub" style="margin:0 auto 36px;" data-i18n="exp.gallery_sub">Casos representativos atendidos por nuestro equipo. Las imágenes son ilustrativas.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="gallery-filters" role="group" aria-label="Filtrar por categoría">
+        <button class="gallery-filter-btn active" data-filter="all" data-i18n="exp.filter_all">Todos</button>
+        <button class="gallery-filter-btn" data-filter="incendio" data-i18n="exp.filter_incendio">Incendio</button>
+        <button class="gallery-filter-btn" data-filter="colision" data-i18n="exp.filter_colision">Colisión</button>
+        <button class="gallery-filter-btn" data-filter="volcadura" data-i18n="exp.filter_volcadura">Volcadura</button>
+        <button class="gallery-filter-btn" data-filter="catastrofico" data-i18n="exp.filter_catastrofico">Catastrófico</button>
+        <button class="gallery-filter-btn" data-filter="descarrilamiento" data-i18n="exp.filter_descarrilamiento">Descarrilamiento</button>
+        <button class="gallery-filter-btn" data-filter="maquinaria" data-i18n="exp.filter_maquinaria">Maquinaria</button>
+      </div>
+
+      <!-- Grid de galería -->
+      <div class="gallery-grid" id="galleryGrid" role="list">
+
+        <div class="gallery-item" data-category="incendio" data-title="Incendio Industrial — Bajío" role="listitem" tabindex="0" aria-label="Ver foto: Incendio industrial en el Bajío">
+          <img src="/assets/images/gallery/caso-1.svg" alt="Siniestro por incendio industrial en el Bajío" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Incendio</div>
+            <div class="gallery-item__title">Incendio Industrial — Bajío</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="colision" data-title="Colisión Vehicular — Autopista" role="listitem" tabindex="0" aria-label="Ver foto: Colisión vehicular en autopista">
+          <img src="/assets/images/gallery/caso-2.svg" alt="Colisión vehicular en autopista" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Colisión</div>
+            <div class="gallery-item__title">Colisión Vehicular — Autopista</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="volcadura" data-title="Volcadura de Trailer — Carga" role="listitem" tabindex="0" aria-label="Ver foto: Volcadura de tráiler con carga">
+          <img src="/assets/images/gallery/caso-3.svg" alt="Volcadura de tráiler con carga" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Volcadura</div>
+            <div class="gallery-item__title">Volcadura de Tráiler — Carga</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="catastrofico" data-title="Daños Estructurales — Zona Centro" role="listitem" tabindex="0" aria-label="Ver foto: Daños estructurales en zona centro">
+          <img src="/assets/images/gallery/caso-4.svg" alt="Daños estructurales en edificio de oficinas" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Catastrófico</div>
+            <div class="gallery-item__title">Daños Estructurales — Zona Centro</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="descarrilamiento" data-title="Descarrilamiento Ferroviario" role="listitem" tabindex="0" aria-label="Ver foto: Descarrilamiento ferroviario">
+          <img src="/assets/images/gallery/caso-5.svg" alt="Descarrilamiento de tren de carga" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Descarrilamiento</div>
+            <div class="gallery-item__title">Descarrilamiento Ferroviario</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="maquinaria" data-title="Falla de Maquinaria Pesada" role="listitem" tabindex="0" aria-label="Ver foto: Falla de maquinaria pesada">
+          <img src="/assets/images/gallery/caso-6.svg" alt="Falla mecánica en maquinaria de construcción" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Maquinaria</div>
+            <div class="gallery-item__title">Falla de Maquinaria Pesada</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="incendio" data-title="Incendio Bodega — Puerto" role="listitem" tabindex="0" aria-label="Ver foto: Incendio en bodega portuaria">
+          <img src="/assets/images/gallery/caso-7.svg" alt="Incendio en bodega logística portuaria" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Incendio</div>
+            <div class="gallery-item__title">Incendio Bodega — Puerto</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="catastrofico" data-title="Huracán — Costa del Golfo" role="listitem" tabindex="0" aria-label="Ver foto: Daños por huracán en zona costera">
+          <img src="/assets/images/gallery/caso-8.svg" alt="Daños por huracán en zona costera" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Catastrófico</div>
+            <div class="gallery-item__title">Huracán — Costa del Golfo</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="colision" data-title="Choque en Cadena — Autopista Norte" role="listitem" tabindex="0" aria-label="Ver foto: Choque en cadena en autopista">
+          <img src="/assets/images/gallery/caso-9.svg" alt="Choque en cadena en autopista federal" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__category">Colisión</div>
+            <div class="gallery-item__title">Choque en Cadena — Autopista Norte</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar visor">✕</button>
+      <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+      <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Siguiente imagen">›</button>
+      <img src="" alt="" class="lightbox__img" id="lightboxImg">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="/assets/images/logo.svg" alt="Norvel" class="footer__logo-img">
+            <span class="footer__logo-text">Norvel</span>
+          </div>
+          <p data-i18n-html="footer.desc">Norvel Peritos Ajustadores<br>Ajuste de seguros con más de 15 años de experiencia en México.</p>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.servicios">Servicios</h5>
+          <a href="/servicios.html#incendio" data-i18n="footer.incendio">Incendio</a>
+          <a href="/servicios.html#rc" data-i18n="footer.rc">Responsabilidad Civil</a>
+          <a href="/servicios.html#transporte" data-i18n="footer.transporte">Transporte de Carga</a>
+          <a href="/servicios.html#ramos-tecnicos" data-i18n="footer.ramos">Ramos Técnicos</a>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.empresa">Empresa</h5>
+          <a href="/nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+          <a href="/equipo.html" data-i18n="nav.equipo">Equipo</a>
+          <a href="/experiencia.html" data-i18n="nav.experiencia">Experiencia</a>
+          <a href="/contacto.html" data-i18n="nav.contacto">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.contacto_title">Contacto</h5>
+          <p data-i18n="footer.ubicacion">📍 Querétaro, QRO</p>
+          <p data-i18n="footer.atencion">Atención 24 hrs</p>
+          <a href="tel:+524420000000">📞 (442) 000-0000</a>
+          <a href="tel:+524420000001">📞 (442) 000-0001</a>
+          <a href="mailto:contacto@norvel.example">✉ contacto@norvel.example</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copy">© 2026 Norvel Peritos Ajustadores. Sitio demostrativo con marca e información ficticias.</p>
+        <p><span data-i18n="footer.dev">Desarrollado por</span> <a href="https://northclick.net" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold);">NorthClick</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-widget" id="whatsappWidget">
+    <a href="https://wa.me/524420000000?text=Hola+Norvel%2C+me+interesa+conocer+sus+servicios+de+ajuste." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <button class="whatsapp-toggle" id="whatsappToggle" aria-label="Minimizar WhatsApp">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+  </div>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/gallery.js"></script>
+</body>
+</html>

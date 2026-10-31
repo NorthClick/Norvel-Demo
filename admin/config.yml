@@ -1,0 +1,110 @@
+# ============================================================
+# Norvel — Configuración Decap CMS
+# Archivo: admin/config.yml
+# ============================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Subir imágenes al repositorio
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# Idioma del panel
+locale: es
+
+collections:
+
+  # ---- Equipo ----
+  - name: "team_members"
+    label: "Equipo"
+    label_singular: "Integrante"
+    folder: "_data/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre completo", name: "name",   widget: "string" }
+      - { label: "Cargo / Especialidad", name: "role",   widget: "string" }
+      - { label: "Correo electrónico", name: "email",  widget: "string", required: false }
+      - { label: "Cédula profesional", name: "cedula", widget: "string", required: false }
+      - { label: "Foto", name: "photo", widget: "image", required: false }
+      - label: "Oficina"
+        name: "office"
+        widget: "select"
+        options:
+          - { label: "Querétaro, QRO", value: "Querétaro, QRO" }
+          - { label: "Ciudad de México", value: "Ciudad de México" }
+          - { label: "Veracruz, VER",  value: "Veracruz, VER" }
+          - { label: "Mérida, YUC",    value: "Mérida, YUC" }
+      - { label: "Mostrar en sitio", name: "active", widget: "boolean", default: true }
+      - { label: "Orden de aparición", name: "order", widget: "number", default: 99 }
+
+  # ---- Aseguradoras ----
+  - name: "insurers"
+    label: "Aseguradoras"
+    label_singular: "Aseguradora"
+    folder: "_data/insurers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre", name: "name",   widget: "string" }
+      - { label: "Logo",   name: "logo",   widget: "image", required: false }
+      - { label: "Activa en carrusel", name: "active", widget: "boolean", default: true }
+
+  # ---- Galería de siniestros ----
+  - name: "sinister_gallery"
+    label: "Galería de Siniestros"
+    label_singular: "Siniestro"
+    folder: "_data/sinister"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Incendio",         value: "incendio" }
+          - { label: "Colisión",         value: "colision" }
+          - { label: "Volcadura",        value: "volcadura" }
+          - { label: "Catastrófico",     value: "catastrofico" }
+          - { label: "Descarrilamiento", value: "descarrilamiento" }
+          - { label: "Maquinaria",       value: "maquinaria" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Fecha del siniestro", name: "date", widget: "date", required: false }
+      - { label: "Descripción breve",   name: "description", widget: "text", required: false }
+      - { label: "Publicar",            name: "active", widget: "boolean", default: true }
+
+  # ---- Contenido del Hero ----
+  - name: "hero_content"
+    label: "Hero — Página Principal"
+    files:
+      - label: "Textos del Hero"
+        name: "hero"
+        file: "_data/hero.yml"
+        fields:
+          - { label: "Titular principal", name: "headline", widget: "string" }
+          - { label: "Subtítulo",         name: "subheadline", widget: "text" }
+          - label: "Estadísticas (counters)"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valor",   name: "value",  widget: "number" }
+              - { label: "Sufijo",  name: "suffix", widget: "string", required: false, hint: "Ej: + o %" }
+              - { label: "Etiqueta", name: "label", widget: "string" }
+
+  # ---- Oficinas ----
+  - name: "offices"
+    label: "Oficinas"
+    label_singular: "Oficina"
+    folder: "_data/offices"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Ciudad",    name: "city",    widget: "string" }
+      - { label: "Dirección", name: "address", widget: "text" }
+      - { label: "Teléfono",  name: "phone",   widget: "string" }
+      - { label: "Es sede matriz", name: "is_headquarters", widget: "boolean", default: false }
+      - { label: "Latitud",   name: "lat", widget: "number", value_type: "float", required: false }
+      - { label: "Longitud",  name: "lng", widget: "number", value_type: "float", required: false }
